@@ -19,6 +19,7 @@ jobs:
             path: ${{github.workspace}}\elt-framework\ControlDB\ELT\Database.sqlproj
             action: 'Publish'
             configure-firewall: false
+            skip-firewall-check: true
             arguments: >
               /p:DropPermissionsNotInSource=false
               /p:BlockOnPossibleDataLoss=false
