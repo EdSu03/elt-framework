@@ -15,7 +15,7 @@ jobs:
         - name: Build and Deploy SQL Database
           uses: Azure/sql-action@v2
           with:
-            connection-string: ${{secrets.CONTROLDB_CONNECTIONSTRING}}
+            connection-string: ${{secrets.NEW_CONTROLDB_CONNECTIONSTRING}}
             path: ${{github.workspace}}\elt-framework\ControlDB\ELT\Database.sqlproj
             action: 'Publish'
             arguments: >
